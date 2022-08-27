@@ -6,9 +6,23 @@
 // organization
 //include "/etc/bind/zones.rfc1918";
 
+key "ddns" {
+        algorithm hmac-md5;
+        secret "6QBnzGyH3Nu3ylN4+y4zRQ=="; // Please, gen your own key
+};
+
+
 zone "zonda.tw" {
         type master;
         file "/etc/bind9_settings/db.zonda.tw";
+        allow-query {
+            any;
+        };
+        allow-update {
+            key "ddns";
+            any; // High risk settings
+        };
+
 };
 
 zone "33.22.11.in-addr.arpa" {

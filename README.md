@@ -41,6 +41,10 @@ you can use named command to debug it.
 /usr/sbin/named -g
 ```
 
+## DDNS
+
+[DDNS setting](./DDNS.md)  
+
 ## Reference
 
 [Debian Bind9 wiki](https://wiki.debian.org/Bind9/)  
