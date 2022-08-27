@@ -20,4 +20,4 @@ stop:
 clean: stop clear
 
 clear:
-	$(DOCKER_COMPOSE_CMD) down
+	$(DOCKER_COMPOSE_CMD) down -v

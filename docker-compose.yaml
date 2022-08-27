@@ -5,3 +5,7 @@ services:
     ports:
       - "53:53/tcp"
       - "53:53/udp"
+    volumes:
+      - type: bind
+        source: ${PWD}/bind9_settings
+        target: /etc/bind9_settings

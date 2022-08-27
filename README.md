@@ -6,7 +6,7 @@
 
 Add google DNS in `/etc/bind/named.conf.options` file.  
 
-```json
+```shell
 forwarders {
     8.8.8.8;
     8.8.4.4;
