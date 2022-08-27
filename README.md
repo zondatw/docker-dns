@@ -2,21 +2,8 @@
 
 ## Setup
 
-### Modify forwarders
-
-Add google DNS in `/etc/bind/named.conf.options` file.  
-
 ```shell
-forwarders {
-    8.8.8.8;
-    8.8.4.4;
-};
-```
-
-### Restart
-
-```shell
-service named restart
+make
 ```
 
 ## Lookup
@@ -34,7 +21,7 @@ pacman -S extra/bind
 ### Check
 
 ```shell
-dig @localhost google.com
+dig @localhost zonda.tw
 ```
 
 ## Trouble shooting
