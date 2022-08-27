@@ -40,3 +40,9 @@ you can use named command to debug it.
 ```shell
 /usr/sbin/named -g
 ```
+
+## Reference
+
+[Debian Bind9 wiki](https://wiki.debian.org/Bind9/)  
+[How to Install and Configure DNS Server in Linux](https://www.thegeekstuff.com/2014/01/install-dns-server/)  
+[Running a DNS Server in Docker](https://medium.com/nagoya-foundation/running-a-dns-server-in-docker-61cc2003e899)  
