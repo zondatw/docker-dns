@@ -40,6 +40,14 @@ $ nsupdate -y hmac-md5:ddns:6QBnzGyH3Nu3ylN4+y4zRQ==
 > send
 ```
 
+## Check
+
+Use following cmd, you can get all record by axfr query  
+
+```shell
+dig @127.0.0.1  zonda.tw axfr
+```
+
 ## Reference
 
 [設定 BIND 的 DDNS (Dynamic DNS) 環境](https://ezbox.idv.tw/180/bind-ddns-dynamic-dns/)  
