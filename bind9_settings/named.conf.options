@@ -1,3 +1,5 @@
+include "/etc/bind9_settings/log.conf";
+
 options {
         directory "/var/cache/bind";
 
