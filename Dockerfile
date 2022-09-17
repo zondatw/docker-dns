@@ -4,7 +4,7 @@ RUN apt update
 
 # Debug use
 # RUN apt install -y dnsutils net-tools
-RUN apt install -y bind9
+RUN apt install -y bind9 procps
 
 RUN sed -i "s/\/etc\/bind\/named.conf.options/\/etc\/bind9_settings\/named.conf.options/g" /etc/bind/named.conf
 RUN sed -i "s/\/etc\/bind\/named.conf.local/\/etc\/bind9_settings\/named.conf.local/g" /etc/bind/named.conf
