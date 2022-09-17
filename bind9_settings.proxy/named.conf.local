@@ -1,0 +1,33 @@
+//
+// Do any local configuration here
+//
+
+// Consider adding the 1918 zones here, if they are not used in your
+// organization
+//include "/etc/bind/zones.rfc1918";
+
+key "ddns" {
+        algorithm hmac-md5;
+        secret "91SImJEvio7GI7QgA9W12Q=="; // Please, gen your own key
+};
+
+
+zone "proxy.zonda.tw" {
+        type master;
+        file "/etc/bind9_settings/db.zonda.tw";
+        allow-query {
+            any;
+        };
+        allow-update {
+            key "ddns";
+            any; // High risk settings
+        };
+
+};
+
+zone "33.22.11.in-addr.arpa" {
+        type master;
+        notify no;
+        file "/etc/bind9_settings/reverse.zonda.tw";
+};
+

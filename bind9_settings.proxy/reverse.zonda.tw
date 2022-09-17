@@ -1,0 +1,15 @@
+@       IN      SOA     ns.zonda.tw. root.proxy.zonda.tw. (
+                         1024           ; Serial
+                         3600           ; Refresh [1h]
+                          600           ; Retry   [10m]
+                        86400           ; Expire  [1d]
+                          600 )         ; Negative Cache TTL [1h]
+;
+@         IN      NS      ns.zonda.tw.
+
+101       IN      PTR     test.proxy.zonda.tw.
+102       IN      PTR     ns.proxy.zonda.tw.
+103       IN      PTR     web.proxy.zonda.tw.
+104       IN      PTR     mail.proxy.zonda.tw.
+106       IN      PTR     proxy.proxy.zonda.tw.
+107       IN      PTR     haha.proxy.zonda.tw.
