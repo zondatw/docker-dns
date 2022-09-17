@@ -8,7 +8,7 @@
 
 key "ddns" {
         algorithm hmac-md5;
-        secret "91SImJEvio7GI7QgA9W12Q=="; // Please, gen your own key
+        secret ""; // Please, gen your own key
 };
 
 
