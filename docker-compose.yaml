@@ -7,5 +7,5 @@ services:
       - "53:53/udp"
     volumes:
       - type: bind
-        source: ${PWD}/bind9_settings
+        source: ./bind9_settings
         target: /etc/bind9_settings
