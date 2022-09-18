@@ -20,7 +20,6 @@ zone "proxy.zonda.tw" {
         };
         allow-update {
             key "ddns";
-            any; // High risk settings
         };
 
 };
