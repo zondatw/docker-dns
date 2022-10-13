@@ -72,6 +72,17 @@ and execute command
 $ nsupdate -y hmac-md5:ddns:6QBnzGyH3Nu3ylN4+y4zRQ== -v settings.txt
 ```
 
+or
+
+```shell
+echo "
+server 127.0.0.1
+update add batch.zonda.tw 86400 A 11.11.11.11
+send
+quit
+" | nsupdate -y hmac-md5:ddns:6QBnzGyH3Nu3ylN4+y4zRQ==
+```
+
 ## Check
 
 Use following cmd, you can get all record by axfr query  
